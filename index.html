@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Projeto Frontend - UCAM</title>
+</head>
+<body>
+        <header> <!--barra de navegação superior-->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-top">
+                <img class="logo" src="/img/whitehat.png" width="80" alt="whitehat">
+                <a class="navbar-brand" href="#">WhiteHat Brasil</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toogle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(atual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Certificações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nossos parceiros</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-sucess my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main role="main"> <!--conteúdo principal-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicator"> <!--Indicadores-->
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner"><!--Carousel-->
+                    <div class="carousel-item active">
+                        <img class="first-slide" src="/img/slide1.jpg" alt="first slide" width="100%" height="450">
+                        <div class="container">
+                            <div class="carousel-caption text-left">
+                                <h1>Notícias</h1>
+                                <p>Últimos acontecimentos no mundo da segurança digital.</p>
+                                <p><a class="btn btn-lg btn-secondary" href="#" role="button">Saiba mais...</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="second-slide" src="/img/slide3.jpg" alt="second slide" width="100%" height="450">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Segurança</h1>
+                                <p>Conheça algumas dicas para aumentar sua segurança ao navegar e se proteger de ataques maliciosos.</p>
+                                <p><a class="btn btn-lg btn-secondary" href="" role="button">Saiba mais...</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="third-slide" src="/img/slide2.jpeg" alt="third slide" width="100%" height="450">
+                        <div class="container">
+                            <div class="carousel-caption text-right">
+                                <h1>Nossa plataforma</h1>
+                                <p>Conheça nossos cursos, professores, trilhas de aprendizagem, etc...</p>
+                                <p><a class="btn btn-lg btn-secondary" href="#" role="button">Clique aqui</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Carousel control-->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Voltar</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Avançar</span>
+                </a>
+            </div>
+
+            <!--Envolve o resto da página em outro container para centralizar todo conteúdo-->
+            <div class="container marketing">
+                <div class="titulo">
+                    <h3>Nossa Equipe</h3>
+                </div>                
+                <!--quatro colunas de texto abaixo do carousel-->
+                <div class="row">
+                    <div class="col-lg-3"><!--McAfee-->
+                        <img class="rounded-circle" src="/img/JMcAfee.jpg" alt="Esse saber viver a vida kkkk" width="200" height="250">
+                        <h4>John McAfee</h4>
+                        <p><i>"Se você é dono dos fatos, você pode distorcê-los como quiser."</i></p>
+                        <p><b>Mestre em Engenharia Social</b></p>
+                        <p>
+                            <ul>
+                                <li>Matemático</li>
+                                <li>Criador da McAfee</li>
+                                <li>Candidato à presidência</li>
+                                <li>Esse sabe viver</li>
+                            </ul>
+                        </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Saiba mais...</a></p>
+                    </div>
+                    <div class="col-lg-3"><!--Thomas Anderson-->
+                        <img class="rounded-circle" src="/img/neo.jpg" alt="Cara do greenpeace que corre atrás de coelhos brancos rsrs" width="200" height="250">
+                        <h4>Thomas Anderson</h4>
+                        <p><i>"Eu só queria ter a mesma onda da Alice no país das maravilhas"</i></p>
+                        <p><b>Mestre em Kung-Fu</b></p>
+                        <p>
+                            <ul>
+                                <li>O escolhido</li>
+                                <li>Follow the White Rabbit</li>
+                                <li>Desvia de balas</li>
+                                <li>John Constantine</li>
+                            </ul>
+                        </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Saiba mais...</a></p>
+                    </div>
+                    <div class="col-lg-3"><!--Tony Stark-->
+                        <img class="rounded-circle" src="/img/tonystark.jpg" alt="Mais rico que o Bruce Wayne" width="200" height="250">
+                        <h4>Tony Stark</h4>
+                        <p><i>"Thor, sua mãe sabe que você está usando as cortinas dela?"</i></p>
+                        <p><b>Desenvolvedor J.A.R.V.I.S</b></p>
+                        <p>
+                            <ul>
+                                <li>Gênio</li>
+                                <li>Bilionário</li>
+                                <li>Playboy</li>
+                                <li>Filantropo</li>
+                            </ul>
+                        </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Saiba mais...</a></p>
+                    </div>
+                    <div class="col-lg-3"><!--Jack Sparrow-->
+                        <img class="rounded-circle" src="/img/jdepp.jpg" alt="Mais rico que o Bruce Wayne" width="200" height="250">
+                        <h4>Jack Sparrow</h4>
+                        <p><i>"Você me roubou, e eu vim me pegar de volta."</i></p>
+                        <p><b>Diretor do Núcleo de Pirataria</b></p>
+                        <p>
+                            <ul>
+                                <li>Apreciador de rum</li>
+                                <li>Saqueador de criptomoedas</li>
+                                <li>Oficial Capitão</li>
+                                <li>Chapeleiro maluco</li>
+                            </ul>
+                        </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Saiba mais...</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Novo ataque trojan em clientes de bancos brasileiros.<span class="text-muted">Criminosos agem por meio de campanhas massivas de pishing.</span></h2>
+                    <p class="lead">A empresa de segurança da informação ESET, da Eslováquia, localizou um novo tipo de trojan bancário que tem como principal alvo clientes de serviços bancários online de bancos do México, da Espanha e, principalmente, do Brasil. </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="https://www.kaspersky.com/content/en-global/images/repository/isc/2021/trojans-1.jpg" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Como a Renner reestabeleceu seus sistemas após infecção por ransonware? <span class="text-muted">Fontes não oficiais, afirmam que a empresa teria pago o equivalente à U$ 20 milhões em ciptomoedas;</span></h2>
+                    <p class="lead">No dia 19 de agosto, a The Hack revelou, com exclusividade, que as Lojas Renner, uma das maiores redes de comércio de roupas do Brasil, havia sido infectada com um ransomware. A informação foi apurada através de capturas de tela fornecidas por um pesquisador de segurança, leitor da The Hack.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2021/ransomware.jpg" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Brasil é o 5º país com mais registro de ataques de hackers contra empresas<span class="text-muted">EUA, Reino Unido, Alemanha e África do Sul, lideram esta lista.</span></h2>
+                    <p class="lead">Segundo o estudo, só nos seis primeiros meses deste ano, os registros no país já superaram o total de ocorrências de 2020. Se considerados apenas os casos de “ransomware“, que são aqueles que envolvem o bloqueio do sistema em troca de um pagamento de resgate, já foram 9,1 milhões de casos por aqui em 2021.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="https://media.moneytimes.com.br/uploads/2021/08/hacker2.jpg" alt="">
+                </div>
+            </div>
+
+            <!--footer-->
+            <footer class="container">
+                <p><a href="">Voltar ao topo</a></p>
+                <p>&copy; Todos os direitos reservados,2021-2022 &middot; <a href="#">Privacidade</a>&middot; <a href="#">Termos</a></p>
+            </footer>
+        </main>
+
+        <!--Coloquei os scripts no final para a página carregar mais rápido-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/vendor/holder.min.js"></script>
+</body>
+</html>

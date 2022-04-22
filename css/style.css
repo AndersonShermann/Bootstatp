@@ -1,0 +1,51 @@
+/*ESTILOS GLOBAIS*/
+.body{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+/*NAVBAR*/
+.nav-top{
+    background-color: black;
+}
+
+.logo{
+    padding-right: 10px;
+}
+
+/*CAROUSEL*/
+.carousel{
+    margin-bottom: 2rem;
+}
+
+.carousel-caption{
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item{
+    height: 28rem;
+    background-color: #6c757d;
+}
+
+.carousel-item > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 27rem;
+}
+
+.marketing .col-lg-4{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.titulo{
+    background-color: #6c757d;
+    text-align: center;
+    color: #fff;
+    margin-top: 1px;
+}
+
